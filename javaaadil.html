@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placement</title> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">  
+<link rel="stylesheet" href="prism.css">
+
+</head>
+<body>  
+
+    <div class="start">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="te.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="q.svg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                 
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="s.svg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                 
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+    <!-- <nav class="navbar navbar-expand-sm bg-dark  navbar-dark">
+        <div class="container-fluid"> 
+            <div class="container">
+          <a class="navbar-brand" href="#">Navbar</a></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button> 
+          <div class="container">
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link disabled">Disabled</a>
+            </div>
+          </div> 
+        </div>
+        </div>
+      </nav> -->
+      <!-- <div class="card" style="width: 18rem;">
+        <img src="q.svg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div> -->
+      
+      <div class="alert alert-primary" role="alert"> 
+       
+        Write a method Met that takes as parameter a positive integer n.
+
+You have to print the largest power of 2 less than or equal to n.
+
+For example, for 10 the largest power of 2 less than or equal to 10 is 8. For 64 largest power of 2 less than or equal to it is 64
+
+Hint: instead of doing ++ in your loops, can you think of a different operator?
+
+The Met method has to be inside a Solution class. Please check the code editor for the ideal method definition.
+
+Example Input: 1 <br>    
+Output: 1  <br> 
+Example Input: 5 <br>      
+Output: 4 <br> 
+Example Input: 10000 <br> 
+Output: 8192 <br> 
+ 
+      </div>
+<pre>
+    <code class="language-java">
+        class Solution {
+            public static void Met(int n) {
+                /* write your solution here */
+                int i=1,j=0;
+                   while(i < n)
+                  {
+                      j=i;
+                      i=i*2;
+                  }
+                System.out.println(j);
+            }
+          }
+          
+    </code>
+</pre>
+        
+      <div class="alert alert-primary" role="alert">
+        Write a method Met that takes as parameter an integer and prints the number of digits in the integer.
+
+        The Met method has to be inside a Solution class. Please check the code editor for the ideal method definition. <br> <br>
+        
+        Example Input: 7897 <br>
+        Output: 4 <br>
+        Example Input: -956 <br>
+        Output: 3 <br>
+        Example Inp <br>
+        
+      </div>
+      <pre>
+        <code class="language-java">
+            class Solution {
+                public static void Met(int n) {
+                    /* write your solution here */
+                       int c=0;
+                    if(n==0)
+                        c=1;
+                    else
+                    {
+                    while(n!=0)
+                    {
+                        n=n/10;
+                        c++;
+                    }
+                    }
+                    System.out.println(c);
+                }
+              }
+              
+        </code>
+    </pre>
+      <div class="alert alert-primary" role="alert"> 
+       
+        Write a method Met that takes as parameter an integer n.
+
+You have to print the number of zeros at the end of the factorial of n.
+
+For example, 3! = 6. The number of zeros are 0. 5! = 120. The number of zeros at the end are 1.
+
+Hint: Think about which numbers multiplication leads to a 0 at the end
+
+The Met method has to be inside a Solution class. Please check the code editor for the ideal method definition. <br>
+
+Note: n! < 10^5  <br>
+
+Example Input: 3 <br>
+Output: 0 <br>
+Example Input: 60 <br>
+Output: 14 <br>
+Example Input: 100 <br>
+Output: 24 <br>
+Example Input: 1024 <br>
+Output: 253 <br>
+
+      </div>
+      <pre>
+        <code class="language-java">
+            class Solution {
+                public static void Met(int n) {
+                    /* write your solution here */
+                    int count=0;
+                  for(int i = 5 ; i <= n ; i=i*5) {
+                  count = count + (n/i);
+                  }
+                  System.out.println(count);
+                }
+              }
+              
+        </code>
+    </pre>
+      <div class="alert alert-primary" role="alert"> 
+       
+ Consider the following sequence: <br>
+1st term: 1 <br>
+2nd term: 1 2 1 <br>
+3rd term: 1 2 1 3 1 2 1 <br>
+4th term: 1 2 1 3 1 2 1 4 1 2 1 3 1 2 1 <br>
+
+And so on. Write a method Met that takes as parameter an integer n and prints the nth terms of this sequence. <br>
+ <br>
+Hint: Perhaps you should use a String to store the sequence? What is happening in each term of the sequence? <br>
+ <br>
+The Met method has to be inside a Solution class. Please check the code editor for the ideal method definition. <br>
+
+Example Input: 1 <br>
+Output: 1 <br>
+Example Input: 4 <br>
+Output: 1 2 1 3 1 2 1 4 1 2 1 3 1 2 1 <br>
+
+      </div>
+      <pre>
+        <code class="language-java">
+            class Solution {
+                public static void Met(int n) {
+                    /* write your solution here */
+                     String s= new String("1");
+                    if(n==1)
+                        System.out.println(s);
+                    else
+                    {
+                    for(int i=2;i<=n;++i)
+                    {
+                        if(i==n)
+                            s=s+" "+n+" "+s;
+                        else
+                            s=s+" "+i+" "+s;
+                    }
+                        System.out.println(s);
+                    }
+                }
+              }
+              
+        </code>
+    </pre>
+      <div class="alert alert-primary" role="alert"> 
+       
+        Write a program that takes as input a String and prints the reverse of the String. <br>
+
+Keep the name of your class as Main. <br>
+
+Input Format: <br>
+The first line contains n which tells you the number of inputs. The next n lines contain the strings. <br>
+
+Example Input: <br>
+
+3 <br>
+Apple <br>
+mY naMe iS java <br>
+WOWe <br>
+Output: <br>
+
+elppA <br>
+avaj Si eMan Ym <br>
+eWOW <br>
+
+
+      </div>
+      <pre>
+        <code class="language-java">
+            import java.util.Scanner;
+class Main{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        String a=sc.nextLine();
+        int n=Integer.parseInt(a);
+        for(int i=0;i< n;i++)
+        {
+            String s1=sc.nextLine();
+            StringBuffer s = new StringBuffer(s1);
+            System.out.println(s.reverse());
+        }
+    }
+}
+
+        </code>
+    </pre>
+      <div class="alert alert-primary" role="alert"> 
+       
+        Write a program that reads an input n from stdin. n tells us the number of rows to be printed. Print the pattern as per the given examples. <br>
+
+        Input format: The first line contains the number of inputs. The lines after that contain a different values for n <br>
+        
+        Example Input: <br>
+        2 <br>
+        3 <br>
+        5 <br>
+        Output: <br>
+        1 <br>
+        1 2 <br>
+        1 2 3 <br>
+        1 <br>
+        1 2 <br>
+        1 2 3
+        1 2 3 4 <br>
+        1 2 3 4 5 <br>
+        
+      </div>
+      <pre>
+        <code class="language-java">
+            import java.util.Scanner;
+class Main{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        int t=sc.nextInt();
+        while(t-->0){
+            int a=sc.nextInt();
+            for(int i=1;i<=a;i++){
+                for(int j=1;j<=i;j++){
+                    System.out.print(j+" ");
+                }
+                System.out.println();
+            }
+            
+        }
+     }
+}
+
+        </code>
+    </pre>
+      <div class="alert alert-primary" role="alert"> 
+       
+Write a program that reads an input n from stdin. n tells us the number of rows to be printed. Print the pattern as per the given examples. <br>
+
+Input format: The first line contains the number of inputs. The lines after that contain a different values for n <br>
+Example Input : <br>
+2 <br>
+3 <br>
+5 <br>
+Output: <br>
+3 <br>
+3 2 <br>
+3 2 1 <br>
+5 <br>
+5 4 <br>
+5 4 3 <br>
+5 4 3 2 <br>
+5 4 3 2 1 <br>
+
+      </div>
+      <pre>
+        <code class="language-java">
+            import java.util.*;
+class Main
+{
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        int test=sc.nextInt();
+        while(test-- !=0)
+        {
+            int n=sc.nextInt();
+            for(int i=n;i>=1;i--)
+            {
+                for(int j=n;j>=i;j--)
+                    System.out.print(j+" ");
+                System.out.println();
+            }
+        }
+    }
+}
+
+        </code>
+    </pre>
+      <div class="alert alert-primary" role="alert"> 
+       
+        Write a method Met that takes as parameter an integer N and creates an NxN triangular pattern like the examples below. <br>
+
+The Met method has to be inside a Solution class. Please check the code editor for the ideal method definition. <br>
+
+Example Input: 3 <br>
+Example Output: <br>
+
+*** <br>
+.** <br>
+..* <br>
+Example Input: 5 <br>
+Example Output: <br>
+
+***** <br>
+.**** <br>
+..*** <br>
+...** <br>
+....* <br>
+
+      </div>
+      <pre>
+        <code class="language-java">
+            class Solution {
+                public static void Met(int N) {
+                    /* write your solution here */
+                    for(int i=N;i>0;i--){
+                        for(int spa=N;spa>i;spa--){
+                            System.out.print(".");
+                        }
+                        for(int j=N-i;j< N;j++){
+                            System.out.print("*");
+                        }
+                        System.out.println();
+                    }
+                }
+              }
+              
+        </code>
+    </pre>
+    <div class="alert alert-primary" role="alert"> 
+       
+        Write a method Met that takes as parameter an integer N and prints an NxN formation like the examples below. <br>
+
+The Met method has to be inside a Solution class. Please check the code editor for the ideal method definition. <br>
+
+Hint: Is there a relation between row number and the number of *? What about row number and number of .? <br>
+
+Example Input: 1 <br>
+Example Output: <br>
+ <br>
+*.* <br>
+*** <br>
+*.* <br>
+Example Input: 5 <br>
+Example Output: <br>
+
+*.........* <br>
+**.......** <br>
+***.....*** <br>
+****...**** <br>
+*****.***** <br>
+*********** <br>
+*****.***** <br>
+****...**** <br>
+***.....*** <br>
+**.......** <br>
+*.........* <br>
+ <br>
+      </div>
+      <pre>
+        <code class="language-java">
+            class Solution {
+                public static void Met(int N) {
+                    /* write your solution here */
+                      for (int i=-N;i<=N;i++) {
+                          for (int j=-N;j<= N;j++) {
+                              if (i*i <= j*j)
+                                  System.out.print("*");
+                              else
+                                  System.out.print(".");
+                          }
+                          System.out.println();
+                      }
+                }
+              }
+              
+        </code>
+    </pre>
+    <div class="alert alert-primary" role="alert"> 
+       
+Write a method Met that takes as parameter an integer N and prints a diamond like the examples below. <br>
+
+The Met method has to be inside a Solution class. Please check the code editor for the ideal method definition. <br>
+
+Hint: How many rows are there for a number N? How many columns? How many . on each row? How many * on each row? <br>
+ <br>
+Example Input: 4 <br>
+Output: <br>
+
+....*.... <br>
+...***... <br>
+..*****.. <br>
+.*******. <br>
+********* <br>
+.*******. <br>
+..*****.. <br>
+...***... <br>
+....*.... <br>
+Example Input: 2 <br>
+Output: <br>
+
+..*.. <br>
+.***. <br>
+***** <br>
+.***. <br>
+..*.. <br>
+
+      </div>
+      <pre>
+        <code class="language-java">
+            class Solution {
+                public static void Met(int N) {
+                    /* write your solution here */
+                    int n=2*N+1;
+                    for(int i=1;i<=N+1;i++)
+                    {
+                        for(int j=1;j<=n;j++)
+                        {
+                            if((i+j)<=N+1||(j-i)>=N+1)
+                                System.out.print(".");
+                            else
+                                System.out.print("*");
+                        }
+                        System.out.println();
+                    }
+                    for(int i=1;i<=N;i++)
+                    {
+                        for(int j=1;j<=n;j++)
+                        {
+                            if((i>=j)||(i+j)>n)
+                                 System.out.print(".");
+                            else
+                                System.out.print("*");
+                        }
+                          System.out.println();
+                    }
+                }
+              }
+              
+        </code>
+    </pre>
+    <div class="alert alert-primary" role="alert"> 
+       
+        Write a method Met that takes as parameter an integer n and prints the nth prime number. <br>
+
+        Example, the first prime number is 2. The next prime number: 3. The 7th prime number is 17 <br>
+        
+        Only write the method - assume that the Class & main method have been defined. <br>
+        
+        Example Input: 1 <br>
+        Output: 2 <br>
+        Example Input: 3 <br>
+        Output: 5 <br>
+        Example Input: 7 <br>
+        Output: 17 <br>
+        
+      </div>
+      <pre>
+        <code class="language-java">
+            public static void Met(int n){
+                int num=1, count=0, i;
+                while (count < n)
+                {
+                    num=num+1;
+                    for (i = 2; i <= num; i++)
+                    {
+                        if (num % i == 0)
+                        {
+                            break;  
+                        }
+                    }
+                    if (i == num)  
+                    {
+                        count = count+1;
+                    }
+                }
+                System.out.println(num);
+            }
+            
+        </code>
+    </pre>
+    <div class="alert alert-primary" role="alert"> 
+       
+        Write a method Met that takes as parameter a positive integer N and prints all the prime factors of the number N. <br>
+
+2 has only 1 prime factor: 2. However, for 63 there are 3 3 7 <br>
+
+Only write the method - assume that the Class & main method have been defined. <br>
+
+Example Input: 6 <br>
+Output: 2 3 <br>
+Example Input: 27 <br>
+Output: 3 3 3 <br>
+Example Input: 321 <br>
+Output: 3 107 <br>
+
+      </div>
+      <pre>
+        <code class="language-java">
+            public static void Met(int n)
+{
+   while(n%2==0)
+   {
+       System.out.print(2 + " ");
+            n /= 2;
+   }
+    for(int i=3;i<=Math.sqrt(n);i++)
+    {
+        while(n%i==0)
+        {
+            System.out.print(i+" ");
+            n/=i;
+        }
+    }
+    if(n>2)
+        System.out.print(n);
+  System.out.println();
+}
+
+        </code>
+    </pre>
+    <div class="alert alert-primary" role="alert"> 
+       
+No 4 No 9, Please Be Fine! <br>
+For some reason, we are actively avoiding the numbers 4 and 9. <br>
+ <br>
+Write a method Met that takes as parameter an integer array. The array will be of length 2. If the numbers 4 or 9 are present in the array, you have to print Avoid, otherwise print OK <br>
+
+Use the System.out.println() statement to print. <br>
+
+Don’t write the Class and main method - assume they are already there. <br>
+
+Example Input: 4 7 <br>
+Output: Avoid <br>
+Example Input: 1 5 <br>
+Output: OK <br>
+
+      </div>
+      <pre>
+        <code class="language-java">
+            public static void Met(int a[]){
+                int count=0;
+                for(int i:a){
+                    if(i==4 || i==9){
+                        count=1;
+                    }
+                }
+                System.out.println(count==0?"OK":"Avoid");
+            }
+            
+        </code>
+    </pre>
+    <div class="alert alert-primary" role="alert"> 
+       
+        Dr. CooCoo is demanding some weird arrays. This is what she wants: <br>
+        Given a number n, she wants an array of size n*n with the elements as follows: <br>
+         <br>
+        n	Array <br>
+        2	0 1 2 1 <br>
+        3	0 0 1 0 2 1 3 2 1 <br>
+        4	0 0 0 1 0 0 2 1 0 3 2 1 4 3 2 1 <br>
+        And so on… <br>
+        
+        Note: n is greater than or equal to 2 <br>
+        
+        Write a method Met that takes as parameter an integer n and returns the required array. <br>
+        
+        The Met method has to be inside a Solution class. Please check the code editor for the ideal method definition. <br>
+        
+        Example Input: 2 <br>
+        Output: 0 1 2 1 <br>
+        Example Input: 4 <br>
+        Output: 0 0 0 1 0 0 0 2 1 0 3 2 1 4 3 2 1 <br>
+        
+      </div>
+      <pre>
+        <code class="language-java">
+            class Solution {
+                public static int [] Met(int n) {
+                    /* write your solution here */
+                    int count=0,k=0,a[]=new int[n*n];
+                    for(int i=0;i< n;i++){
+                        count=i+1;
+                        for(int j=0;j< n;j++){
+                            if(j>=n-i-1){
+                                a[k++]=count--;
+                            } else {
+                                a[k++]=0;
+                            }
+                        }
+                    }
+                    return a;
+                }
+              }
+              
+        </code>
+    </pre>
+    <div class="alert alert-primary" role="alert"> 
+       
+Pascal’s triangle is one of the most fun and interesting pattern in mathematics. <br>
+ <br>
+Write a method Met that takes as parameter an integer denoting the number of rows. You have to print the rows of the Pascal’s triangle. <br>
+
+The Met method has to be inside a Solution class. Please check the code editor for the ideal method definition. <br>
+
+Example Input: <br>
+1 <br>
+Example Output: <br>
+1 <br>
+Example Input: <br>
+2 <br>
+Example Output: <br>
+1 <br>
+1 1 <br>
+Example Input: <br>
+4 <br>
+Example Output: <br>
+1 <br>
+1 1 <br>
+1 2 1 <br>
+1 3 3 1 <br>
+
+      </div>
+      <pre>
+        <code class="language-java">
+            class Solution {
+                public static void Met(int n) {
+                    /* write your solution here */
+                    int coef=0;
+                     for(int i = 0; i < n; i++) 
+                     {
+                       for(int j = 0; j < = i; j++)
+                       {
+                          if (j==0 || i==0)
+                            coef = 1;
+                          else
+                              coef = coef*(i-j+1)/j;
+                          System.out.print(coef+" ");
+                       }
+                       System.out.println();
+                    }
+                }
+              }
+              
+        </code>
+    </pre>
+    <div class="alert alert-primary" role="alert"> 
+       
+    Write a method Met that takes as parameter an integer array and sorts the array in ascending order using Bubble Sort. At each step of the sort, you have to print the array. <br>
+
+    Use the System.out.println() statement to print. <br>
+        
+     brDon’t write the Class and main method - assume they are already there. <br>
+        
+        Example Input: <br>
+        4 1 3 2 <br>
+        Output: <br>
+        1 3 2 4 <br>
+        1 2 3 4 <br>
+        1 2 3 4 <br>
+        1 2 3 4 <br>
+        
+      </div>
+      <pre>
+        <code class="language-java">
+            public static void Met(int a[])
+{
+    int s=a.length;
+    for(int i=0;i<s;i++)
+    {
+        for(int j=0;j<s-i-1;j++)
+        {
+            if(a[j]>a[j+1])
+            {
+                int temp=a[j];
+                a[j]=a[j+1];
+                a[j+1]=temp;
+            }
+        }
+        for(int k=0;k< s;k++)
+        {
+            System.out.print(a[k]+" ");
+        }
+        System.out.println();
+    }
+}
+
+        </code>
+    </pre>
+    <div class="alert alert-primary" role="alert"> 
+       
+Write a method Met that takes as parameter an integer array and sorts the array in descending order using Bubble Sort. At each step of the sort, you have to print the array. <br>
+
+Use the System.out.println() statement to print. <br>
+
+Don’t write the Class and main method - assume they are already there. <br>
+
+Example Input: <br>
+5 9 2 10 <br>
+Output: <br>
+9 5 10 2 <br>
+9 10 5 2 <br>
+10 9 5 2 <br>
+10 9 5 2 <br>
+
+      </div>
+      <pre>
+        <code class="language-java">
+            public static void Met(int a[])
+{
+    int s=a.length;
+    for(int i=0;i< s;i++)
+    {
+        for(int j=0;j< s-i-1;j++)
+        {
+            if(a[j]< a[j+1])
+            {
+                int temp=a[j];
+                a[j]=a[j+1];
+                a[j+1]=temp;
+            }
+        }
+        for(int k=0;k< s;k++)
+        {
+            System.out.print(a[k]+" ");
+        }
+        System.out.println();
+    }
+}
+
+        </code>
+    </pre>
+    <div class="alert alert-primary" role="alert"> 
+       
+Write a method Met that takes as parameter an integer array and sorts the array in ascending order using Selection Sort. At each step of the sort, you have to print the array. <br>
+
+Use the System.out.println() statement to print. <br>
+
+Don’t write the Class and main method - assume they are already there. <br>
+
+Example Input: <br>
+5 2 7 3 4 8 1 6 <br>
+Output: <br>
+1 2 7 3 4 8 5 6 <br>
+1 2 7 3 4 8 5 6 <br>
+1 2 3 7 4 8 5 6 <br>
+1 2 3 4 7 8 5 6 <br>
+1 2 3 4 5 8 7 6 <br>
+1 2 3 4 5 6 7 8 <br>
+1 2 3 4 5 6 7 8 <br>
+1 2 3 4 5 6 7 8 <br>
+
+      </div>
+      <pre>
+        <code class="language-java">
+            static void Met(int a[])
+{
+    int s=a.length,index;
+    for(int i=0;i< s;i++)
+    {
+        index=i;
+        for(int j=i+1;j< s;j++)
+        {
+            if(a[j]< a[index])
+            {
+                index=j;
+            }
+        }
+        int temp=a[i];
+                a[i]=a[index];
+                a[index]=temp;
+            for(int k=0;k< s;k++)
+                  System.out.print(a[k]+" ");
+              System.out.println();
+    }
+}
+
+        </code>
+    </pre>
+    <div class="alert alert-primary" role="alert"> 
+       
+ <br> a method Met that takes as parameter an integer array and sorts the array in ascending order using Insertion Sort. At each step of the sort, you have to print the array. <br>
+
+Use the System.out.println() statement to print.<br>
+
+Don’t write the Class and main method - assume they are already there.<br>
+
+Example Input:<br>
+3 2 1 5 6 4 8 7<br>
+Output:<br>
+2 3 1 5 6 4 8 7<br>
+1 2 3 5 6 4 8 7<br>
+1 2 3 5 6 4 8 7<br>
+1 2 3 5 6 4 8 7<br>
+1 2 3 4 5 6 8 7<br>
+1 2 3 4 5 6 8 7<br>
+1 2 3 4 5 6 7 8<br>
+
+      </div>
+      <pre>
+        <code class="language-java">
+            static void Met(int a[])
+{
+    int s=a.length,index;
+    for(int i=0;i< s;i++)
+    {
+        int temp=a[i];
+        for(int j=i;j>0;j--)
+        {
+            if(a[j-1]>temp)
+            {
+                a[j]=a[j-1];
+                a[j-1]=temp;
+                
+            }
+        }
+        if(i>0)
+        {
+        for(int k=0;k< s;k++)
+                  System.out.print(a[k]+" ");
+              System.out.println();
+        }
+    }
+}
+
+        </code>
+    </pre>
+    <div class="alert alert-primary" role="alert"> 
+       
+    Given a string, you have to tell us if the string is a palindrome or not. <br>
+
+    Write a method Met that takes as parameter a String and returns true if the string is a palindrome. Otherwise, it returns false. Use recursion to solve this problem.
+        
+    The Met method has to be inside a Solution class. Please check the code editor for the ideal method definition. <br>
+         <br>
+    Example Input: <br>
+    rudy <br>
+    Output: <br>
+    false <br>
+    Example Input: <br>
+    xcx <br>
+    Output: <br>
+    true <br>
+        
+      </div>
+      <pre>
+        <code class="language-java">
+            class Solution {
+                public static boolean Met(String w) {
+                    /* write your solution here */
+                    int j=w.length()-1;
+                    for(int i=0;i< w.length();i++)
+                    {
+                        if(i< j)
+                        {
+                            if(w.charAt(i)!=w.charAt(j--))
+                                return false;
+                        }
+                    }
+                        return true;
+                }
+              }
+              
+        </code>
+    </pre>
+    <div class="alert alert-primary" role="alert"> 
+       
+Write a method Met that takes as parameter an integer array and sorts the array in ascending order using Quicksort. <br>
+
+You have to return the sorted array. <br>
+
+Don’t write the Class and main method - assume they are already there. <br>
+
+Example Input: <br>
+10 5 1 7 4 6 <br>
+Output: <br>
+1 4 5 6 7 10 <br>
+
+      </div>
+      <pre>
+        <code class="language-java">
+            static int  partion(int a[],int low,int high)
+{
+    int pivot=a[low],i=low,j=high;
+    while(i< j)
+    {
+    while(a[i]<=pivot&&i< j)
+        i++;
+    while(a[j]>pivot)
+        j--;
+    if(i< j)
+    {
+        int temp=a[i];
+        a[i]=a[j];
+        a[j]=temp;
+    }
+  }
+  a[low]=a[j];
+  a[j]=pivot;
+  return j;
+}
+static void quicksort(int a[],int low,int high)
+{
+    int j;
+    if(low< high)
+    {
+        j=partion(a,low,high);
+        quicksort(a,low,j-1);
+        quicksort(a,j+1,high);
+    }
+}
+static int[] Met(int a[])
+{
+    quicksort(a,0,a.length-1);
+    return a;
+}
+
+        </code>
+    </pre>
+      <script src=
+      "https://www.jdoodle.com/assets/jdoodle-pym.min.js"
+              type="text/javascript"> 
+
+          </script> 
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+<script src="prism.js"></script>
+</body>
+</html>

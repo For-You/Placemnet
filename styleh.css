@@ -1,0 +1,29 @@
+body
+{
+    background-image: url("te.png");
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+}
+#showcase .showcase-content{
+    color: white;
+    text-align: center;
+    padding-top: 170px;
+}
+.btn{
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+    background: blueviolet;
+    padding: 13px 20px;
+    margin-top: 300px;
+    
+    border: none;
+    cursor: pointer;
+}
+.btn:hover{
+    background: lightgreen;
+    color: #333;
+    
+}
